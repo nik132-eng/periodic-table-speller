@@ -19,12 +19,15 @@ function check(inputWord) {
 	// with periodic table symbols; return array with
 	// them if so (empty array otherwise)
 
-	return [];
+	return ["y","u","c"];
 }
 
 function lookup(elementSymbol) {
-	// TODO: return the element entry based on specified
-	// symbol (case-insensitive)
+	
+    for( let element of elements){
+        if(elements.symbol.toLowercase() == elementSymbol){
+            return element;
+        }
 
-	return {};
+    }
 }

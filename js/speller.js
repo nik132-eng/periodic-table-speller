@@ -25,7 +25,7 @@ function check(inputWord) {
 function lookup(elementSymbol) {
 	
     for( let element of elements){
-        if(elements.symbol.toLowerCase() == elementSymbol){
+        if(elements.symbol?.toLowerCase() || '' == elementSymbol){
             return element;
         }
 
